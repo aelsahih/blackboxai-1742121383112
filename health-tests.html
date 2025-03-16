@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tests - Nourishd.me</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2D6A4F',
+                        secondary: '#74C69D',
+                        accent: '#B7E4C7',
+                        darkGreen: '#1B4332',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="index.html">
+                            <img src="/assets/images/logo.svg" alt="Nourishd.me" class="h-24">
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="about.html" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">About</a>
+                    <a href="index.html#services" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="meal-plans.html" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Meal Plans</a>
+                    <a href="shop.html" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Shop</a>
+                    <a href="index.html#contact" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Contact</a>
+                    <button onclick="openConsultationModal()" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                        Book Appointment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 bg-gradient-to-b from-accent/30 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-primary text-center mb-6">Health Tests</h1>
+            <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto">Comprehensive testing services to understand your body better and optimize your health journey.</p>
+        </div>
+    </section>
+
+    <!-- Tests Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Food Intolerance Test -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                    <div class="relative h-80">
+                        <img src="https://images.pexels.com/photos/3735151/pexels-photo-3735151.jpeg" alt="Food Intolerance Test" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Food Intolerance Test</h3>
+                            <span class="text-lg font-bold text-primary">$5.00</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Comprehensive food intolerance testing to identify foods that may be causing adverse reactions.</p>
+                        <div class="space-y-2 mb-6">
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Tests for 200+ foods</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Detailed report</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Nutritionist consultation included</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/96171580691?text=Hello%2C%20my%20name%20is%20%5BNAME%5D%2C%20and%20I'm%20interested%20in%20taking%20the%20Food%20Intolerance%20Test." target="_blank" class="block text-center bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                                I'm Interested
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comprehensive Blood Test -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                    <div class="relative h-80">
+                        <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg" alt="Comprehensive Blood Test" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Comprehensive Blood Test</h3>
+                            <span class="text-lg font-bold text-primary">$5.00</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Complete blood panel to assess your overall health status and nutritional needs.</p>
+                        <div class="space-y-2 mb-6">
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Full blood count</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Vitamin levels</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Mineral analysis</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/96171580691?text=Hello%2C%20my%20name%20is%20%5BNAME%5D%2C%20and%20I'm%20interested%20in%20taking%20the%20Comprehensive%20Blood%20Test." target="_blank" class="block text-center bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                                I'm Interested
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkGreen text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Nourishd.me</h3>
+                    <p class="text-gray-300">Your trusted partner in nutrition and wellness.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2">
+                        <p class="flex items-center">
+                            <i class="fas fa-phone text-accent mr-2"></i>
+                            <span>+96171580691</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                            <span>Mar Aabda Street, Jal El Dib</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About</a></li>
+                        <li><a href="meal-plans.html" class="text-gray-300 hover:text-white">Meal Plans</a></li>
+                        <li><a href="shop.html" class="text-gray-300 hover:text-white">Shop</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nourishd.lb/" target="_blank" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2023 Nourishd.me. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consultation Modal -->
+    <div id="consultationModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-8 max-w-2xl w-full mx-4 relative">
+            <button onclick="closeConsultationModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="text-center">
+                <img src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg" alt="Consultation" class="rounded-lg mb-6 w-full">
+                <h3 class="text-2xl font-bold text-primary mb-4">Professional Consultation</h3>
+                <p class="text-gray-600 mb-6">
+                    Our professional consultations are tailored to your unique needs and goals. We offer both in-clinic and online consultations for your convenience. During your session, we'll discuss your health history, lifestyle, and create a personalized plan to help you achieve your wellness goals.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="text-center">
+                            <i class="fas fa-clinic-medical text-2xl text-primary mb-2"></i>
+                            <p class="text-sm text-gray-600">In-Clinic</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-video text-2xl text-primary mb-2"></i>
+                            <p class="text-sm text-gray-600">Online</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/96171580691?text=Hello%2C%20my%20name%20is%20%5BNAME%5D%2C%20and%20I%20would%20like%20to%20book%20a%20consultation%20please." target="_blank" class="inline-block bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition duration-300">
+                        Book Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Script -->
+    <script>
+        // Consultation Modal Functions
+        function openConsultationModal() {
+            document.getElementById('consultationModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeConsultationModal() {
+            document.getElementById('consultationModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('consultationModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeConsultationModal();
+            }
+        });
+    </script>
+</body>
+</html>
