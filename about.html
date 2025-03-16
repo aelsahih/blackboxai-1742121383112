@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Nourishd.me</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2D6A4F',
+                        secondary: '#74C69D',
+                        accent: '#B7E4C7',
+                        darkGreen: '#1B4332',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="index.html">
+                            <img src="/assets/images/logo.svg" alt="Nourishd.me" class="h-24">
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#" class="text-primary px-3 py-2 text-sm font-medium">About</a>
+                    <a href="index.html#services" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="meal-plans.html" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Meal Plans</a>
+                    <a href="shop.html" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Shop</a>
+                    <a href="index.html#contact" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Contact</a>
+                    <button onclick="openConsultationModal()" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                        Book Appointment
+                    </button>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" onclick="toggleMobileMenu()" class="text-gray-500 hover:text-primary focus:outline-none focus:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobileMenu" class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html#home" class="block px-3 py-2 text-base font-medium text-darkGreen hover:text-primary">Home</a>
+                    <a href="#" class="block px-3 py-2 text-base font-medium text-primary">About</a>
+                    <a href="index.html#services" class="block px-3 py-2 text-base font-medium text-darkGreen hover:text-primary">Services</a>
+                    <a href="meal-plans.html" class="block px-3 py-2 text-base font-medium text-darkGreen hover:text-primary">Meal Plans</a>
+                    <a href="shop.html" class="block px-3 py-2 text-base font-medium text-darkGreen hover:text-primary">Shop</a>
+                    <a href="index.html#contact" class="block px-3 py-2 text-base font-medium text-darkGreen hover:text-primary">Contact</a>
+                    <button onclick="openConsultationModal()" class="w-full mt-2 bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                        Book Appointment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 bg-gradient-to-b from-accent/30 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-primary text-center mb-6">About Us</h1>
+            <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto">Learn about our journey and commitment to helping you achieve optimal health through personalized nutrition.</p>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-8">Where It All Began</h2>
+                    <div class="text-lg md:text-xl text-gray-600 space-y-6">
+                        <p>Our story began in a warm family kitchen, where a mother and daughter's shared passion for healthy cooking blossomed into something extraordinary. What started as simple experiments with nutritious recipes evolved into a deep understanding of how food can transform lives.</p>
+                        <p>Through years of learning, experimenting, and growing together, we discovered that true wellness comes from a combination of scientific knowledge and heartfelt care. This mother-daughter duo brings together traditional wisdom and modern nutritional science to create personalized solutions for every client.</p>
+                        <p>Today, we're proud to offer a comprehensive range of nutrition and wellness services, from personalized meal plans to health testing, all designed with the same care and attention that began in our family kitchen.</p>
+                    </div>
+                </div>
+                <div class="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden shadow-xl">
+                    <img src="https://images.pexels.com/photos/3807332/pexels-photo-3807332.jpeg" alt="Mother and daughter cooking" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-16 bg-gradient-to-b from-white to-accent/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-primary text-center mb-12">Our Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-heart text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Personalized Care</h3>
+                    <p class="text-gray-600">Every individual is unique, and so are their nutritional needs. We take the time to understand your specific requirements and create tailored solutions.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-leaf text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Natural Approach</h3>
+                    <p class="text-gray-600">We believe in the power of natural, whole foods and sustainable practices to promote optimal health and well-being.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-book-medical text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Evidence-Based</h3>
+                    <p class="text-gray-600">Our recommendations are grounded in scientific research and proven nutritional principles, ensuring effective and safe results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkGreen text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Nourishd.me</h3>
+                    <p class="text-gray-300">Your trusted partner in nutrition and wellness.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2">
+                        <p class="flex items-center">
+                            <i class="fas fa-phone text-accent mr-2"></i>
+                            <span>+96171580691</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                            <span>Mar Aabda Street, Jal El Dib</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">About</a></li>
+                        <li><a href="meal-plans.html" class="text-gray-300 hover:text-white">Meal Plans</a></li>
+                        <li><a href="shop.html" class="text-gray-300 hover:text-white">Shop</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nourishd.lb/" target="_blank" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2023 Nourishd.me. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consultation Modal -->
+    <div id="consultationModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-8 max-w-2xl w-full mx-4 relative">
+            <button onclick="closeConsultationModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="text-center">
+                <img src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg" alt="Consultation" class="rounded-lg mb-6 w-full">
+                <h3 class="text-2xl font-bold text-primary mb-4">Professional Consultation</h3>
+                <p class="text-gray-600 mb-6">
+                    Our professional consultations are tailored to your unique needs and goals. We offer both in-clinic and online consultations for your convenience. During your session, we'll discuss your health history, lifestyle, and create a personalized plan to help you achieve your wellness goals.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="text-center">
+                            <i class="fas fa-clinic-medical text-2xl text-primary mb-2"></i>
+                            <p class="text-sm text-gray-600">In-Clinic</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-video text-2xl text-primary mb-2"></i>
+                            <p class="text-sm text-gray-600">Online</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/96171580691?text=Hello%2C%20my%20name%20is%20%5BNAME%5D%2C%20and%20I%20would%20like%20to%20book%20a%20consultation%20please." target="_blank" class="inline-block bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition duration-300">
+                        Book Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Consultation Modal Functions
+        function openConsultationModal() {
+            document.getElementById('consultationModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeConsultationModal() {
+            document.getElementById('consultationModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('consultationModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeConsultationModal();
+            }
+        });
+
+        // Add back button for mobile
+        if (window.history.length > 1) {
+            const backButton = document.createElement('button');
+            backButton.className = 'fixed top-20 left-4 z-50 md:hidden bg-white/50 hover:bg-white/75 rounded-full p-2 shadow-lg';
+            backButton.innerHTML = '<i class="fas fa-arrow-left text-primary"></i>';
+            backButton.onclick = () => window.history.back();
+            document.body.appendChild(backButton);
+        }
+    </script>
+</body>
+</html>
