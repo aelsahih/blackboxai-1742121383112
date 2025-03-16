@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Nourishd.me</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2D6A4F',
+                        secondary: '#74C69D',
+                        accent: '#B7E4C7',
+                        darkGreen: '#1B4332',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="index.html">
+                            <img src="/assets/images/logo.svg" alt="Nourishd.me" class="h-24">
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="about.html" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">About</a>
+                    <a href="index.html#services" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="meal-plans.html" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Meal Plans</a>
+                    <a href="#" class="text-primary px-3 py-2 text-sm font-medium">Shop</a>
+                    <a href="index.html#contact" class="text-darkGreen hover:text-primary px-3 py-2 text-sm font-medium">Contact</a>
+                    <button onclick="openConsultationModal()" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                        Book Appointment
+                    </button>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="text-gray-500 hover:text-primary focus:outline-none focus:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 bg-gradient-to-b from-accent/30 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-primary text-center mb-6">Healthy Products Shop</h1>
+            <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto">Discover our selection of nutritious snacks and healthy products, carefully curated to support your wellness journey.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Healthy Cookies -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                    <img src="https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg" alt="Healthy Cookies" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Healthy Cookies</h3>
+                            <span class="text-lg font-bold text-primary">$5.00</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Delicious, sugar-free cookies made with natural ingredients. Perfect for a healthy snack.</p>
+                        <div class="space-y-2 mb-6">
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Sugar-free</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> High in fiber</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Natural ingredients</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/96171580691?text=Hello%2C%20my%20name%20is%20%5BNAME%5D%2C%20and%20I'm%20interested%20in%20purchasing%20the%20Healthy%20Cookies." target="_blank" class="block text-center bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                                I'm Interested
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Protein Bars -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                    <img src="https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg" alt="Protein Bars" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Protein Bars</h3>
+                            <span class="text-lg font-bold text-primary">$5.00</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">High-protein, low-sugar bars perfect for pre or post-workout snacks.</p>
+                        <div class="space-y-2 mb-6">
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> 20g protein</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Low sugar</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Natural ingredients</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/96171580691?text=Hello%2C%20my%20name%20is%20%5BNAME%5D%2C%20and%20I'm%20interested%20in%20purchasing%20the%20Protein%20Bars." target="_blank" class="block text-center bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                                I'm Interested
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Granola -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                    <img src="https://images.pexels.com/photos/1374551/pexels-photo-1374551.jpeg" alt="Healthy Granola" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Healthy Granola</h3>
+                            <span class="text-lg font-bold text-primary">$5.00</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Crunchy, nutrient-rich granola made with organic oats and nuts.</p>
+                        <div class="space-y-2 mb-6">
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Organic ingredients</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> High in fiber</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> No added sugars</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/96171580691?text=Hello%2C%20my%20name%20is%20%5BNAME%5D%2C%20and%20I'm%20interested%20in%20purchasing%20the%20Healthy%20Granola." target="_blank" class="block text-center bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                                I'm Interested
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Energy Balls -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                    <img src="https://images.pexels.com/photos/8472878/pexels-photo-8472878.jpeg" alt="Energy Balls" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Energy Balls</h3>
+                            <span class="text-lg font-bold text-primary">$5.00</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Natural energy boosters made with dates, nuts, and superfoods.</p>
+                        <div class="space-y-2 mb-6">
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Raw ingredients</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Rich in nutrients</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Natural energy</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/96171580691?text=Hello%2C%20my%20name%20is%20%5BNAME%5D%2C%20and%20I'm%20interested%20in%20purchasing%20the%20Energy%20Balls." target="_blank" class="block text-center bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                                I'm Interested
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chia Pudding -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                    <img src="https://images.pexels.com/photos/6107773/pexels-photo-6107773.jpeg" alt="Chia Pudding" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Chia Pudding</h3>
+                            <span class="text-lg font-bold text-primary">$5.00</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Creamy chia seed pudding with fresh fruits and honey.</p>
+                        <div class="space-y-2 mb-6">
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Rich in omega-3</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> High in protein</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Fresh fruits</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/96171580691?text=Hello%2C%20my%20name%20is%20%5BNAME%5D%2C%20and%20I'm%20interested%20in%20purchasing%20the%20Chia%20Pudding." target="_blank" class="block text-center bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                                I'm Interested
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smoothie Bowl -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                    <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg" alt="Smoothie Bowl" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Smoothie Bowl</h3>
+                            <span class="text-lg font-bold text-primary">$5.00</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Nutrient-packed smoothie bowl with fresh fruits and superfoods.</p>
+                        <div class="space-y-2 mb-6">
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Fresh ingredients</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Superfood toppings</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Vitamin-rich</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/96171580691?text=Hello%2C%20my%20name%20is%20%5BNAME%5D%2C%20and%20I'm%20interested%20in%20purchasing%20the%20Smoothie%20Bowl." target="_blank" class="block text-center bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                                I'm Interested
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kombucha -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                    <img src="https://images.pexels.com/photos/5946642/pexels-photo-5946642.jpeg" alt="Kombucha" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Kombucha</h3>
+                            <span class="text-lg font-bold text-primary">$5.00</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Probiotic-rich fermented tea with natural flavors.</p>
+                        <div class="space-y-2 mb-6">
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Probiotic-rich</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Natural flavors</p>
+                            <p class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-2"></i> Gut-friendly</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/96171580691?text=Hello%2C%20my%20name%20is%20%5BNAME%5D%2C%20and%20I'm%20interested%20in%20purchasing%20the%20Kombucha." target="_blank" class="block text-center bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+                                I'm Interested
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkGreen text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Nourishd.me</h3>
+                    <p class="text-gray-300">Your trusted partner in nutrition and wellness.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2">
+                        <p class="flex items-center">
+                            <i class="fas fa-phone text-accent mr-2"></i>
+                            <span>+96171580691</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                            <span>Mar Aabda Street, Jal El Dib</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About</a></li>
+                        <li><a href="meal-plans.html" class="text-gray-300 hover:text-white">Meal Plans</a></li>
+                        <li><a href="index.html#contact" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nourishd.lb/" target="_blank" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2023 Nourishd.me. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consultation Modal -->
+    <div id="consultationModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-8 max-w-2xl w-full mx-4 relative">
+            <button onclick="closeConsultationModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="text-center">
+                <img src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg" alt="Consultation" class="rounded-lg mb-6 w-full">
+                <h3 class="text-2xl font-bold text-primary mb-4">Professional Consultation</h3>
+                <p class="text-gray-600 mb-6">
+                    Our professional consultations are tailored to your unique needs and goals. We offer both in-clinic and online consultations for your convenience. During your session, we'll discuss your health history, lifestyle, and create a personalized plan to help you achieve your wellness goals.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="text-center">
+                            <i class="fas fa-clinic-medical text-2xl text-primary mb-2"></i>
+                            <p class="text-sm text-gray-600">In-Clinic</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-video text-2xl text-primary mb-2"></i>
+                            <p class="text-sm text-gray-600">Online</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/96171580691?text=Hello%2C%20my%20name%20is%20%5BNAME%5D%2C%20and%20I%20would%20like%20to%20book%20a%20consultation%20please." target="_blank" class="inline-block bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition duration-300">
+                        Book Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Script -->
+    <script>
+        // Consultation Modal Functions
+        function openConsultationModal() {
+            document.getElementById('consultationModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeConsultationModal() {
+            document.getElementById('consultationModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('consultationModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeConsultationModal();
+            }
+        });
+    </script>
+</body>
+</html>
