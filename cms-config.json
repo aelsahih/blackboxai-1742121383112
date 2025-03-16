@@ -1,0 +1,169 @@
+{
+  "site": {
+    "name": "Nourishd.me",
+    "logo": "/assets/images/logo.svg",
+    "contact": {
+      "phone": "+96171580691",
+      "email": "info@nourishd.me",
+      "address": "Mar Aabda Street, Jal El Dib",
+      "social": {
+        "facebook": "#",
+        "instagram": "https://www.instagram.com/nourishd.lb/"
+      }
+    }
+  },
+  "hero": {
+    "slider": [
+      {
+        "image": "https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg",
+        "title": "Your Journey to Better Health Starts Here",
+        "description": "Professional nutrition and wellness services tailored to your unique needs."
+      },
+      {
+        "image": "https://images.pexels.com/photos/4397833/pexels-photo-4397833.jpeg",
+        "title": "Personalized Nutrition Plans",
+        "description": "Custom meal plans designed for your lifestyle and goals."
+      },
+      {
+        "image": "https://images.pexels.com/photos/3735151/pexels-photo-3735151.jpeg",
+        "title": "Comprehensive Health Testing",
+        "description": "Understand your body better with our advanced testing services."
+      }
+    ]
+  },
+  "featured_products": [
+    {
+      "id": "intolerance-test",
+      "name": "Food Intolerance Test",
+      "price": 5.00,
+      "image": "https://images.pexels.com/photos/3735151/pexels-photo-3735151.jpeg",
+      "description": "Comprehensive food intolerance testing to identify foods that may be causing adverse reactions."
+    },
+    {
+      "id": "healthy-cookies",
+      "name": "Healthy Cookies",
+      "price": 5.00,
+      "image": "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg",
+      "description": "Delicious, sugar-free cookies made with natural ingredients."
+    },
+    {
+      "id": "protein-bars",
+      "name": "Protein Bars",
+      "price": 5.00,
+      "image": "https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg",
+      "description": "High-protein, low-sugar bars perfect for pre or post-workout snacks."
+    }
+  ],
+  "products": [
+    {
+      "id": "healthy-cookies",
+      "name": "Healthy Cookies",
+      "price": 5.00,
+      "image": "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg",
+      "description": "Delicious, sugar-free cookies made with natural ingredients.",
+      "features": [
+        "Sugar-free",
+        "High in fiber",
+        "Natural ingredients"
+      ]
+    },
+    {
+      "id": "protein-bars",
+      "name": "Protein Bars",
+      "price": 5.00,
+      "image": "https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg",
+      "description": "High-protein, low-sugar bars perfect for pre or post-workout snacks.",
+      "features": [
+        "20g protein",
+        "Low sugar",
+        "Natural ingredients"
+      ]
+    },
+    {
+      "id": "granola",
+      "name": "Healthy Granola",
+      "price": 5.00,
+      "image": "https://images.pexels.com/photos/1374551/pexels-photo-1374551.jpeg",
+      "description": "Crunchy, nutrient-rich granola made with organic oats and nuts.",
+      "features": [
+        "Organic ingredients",
+        "High in fiber",
+        "No added sugars"
+      ]
+    },
+    {
+      "id": "energy-balls",
+      "name": "Energy Balls",
+      "price": 5.00,
+      "image": "https://images.pexels.com/photos/8472878/pexels-photo-8472878.jpeg",
+      "description": "Natural energy boosters made with dates, nuts, and superfoods.",
+      "features": [
+        "Raw ingredients",
+        "Rich in nutrients",
+        "Natural energy"
+      ]
+    },
+    {
+      "id": "chia-pudding",
+      "name": "Chia Pudding",
+      "price": 5.00,
+      "image": "https://images.pexels.com/photos/6107773/pexels-photo-6107773.jpeg",
+      "description": "Creamy chia seed pudding with fresh fruits and honey.",
+      "features": [
+        "Rich in omega-3",
+        "High in protein",
+        "Fresh fruits"
+      ]
+    },
+    {
+      "id": "smoothie-bowl",
+      "name": "Smoothie Bowl",
+      "price": 5.00,
+      "image": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg",
+      "description": "Nutrient-packed smoothie bowl with fresh fruits and superfoods.",
+      "features": [
+        "Fresh ingredients",
+        "Superfood toppings",
+        "Vitamin-rich"
+      ]
+    },
+    {
+      "id": "kombucha",
+      "name": "Kombucha",
+      "price": 5.00,
+      "image": "https://images.pexels.com/photos/5946642/pexels-photo-5946642.jpeg",
+      "description": "Probiotic-rich fermented tea with natural flavors.",
+      "features": [
+        "Probiotic-rich",
+        "Natural flavors",
+        "Gut-friendly"
+      ]
+    }
+  ],
+  "health_tests": [
+    {
+      "id": "food-intolerance",
+      "name": "Food Intolerance Test",
+      "price": 5.00,
+      "image": "https://images.pexels.com/photos/3735151/pexels-photo-3735151.jpeg",
+      "description": "Comprehensive food intolerance testing to identify foods that may be causing adverse reactions.",
+      "features": [
+        "Tests for 200+ foods",
+        "Detailed report",
+        "Nutritionist consultation included"
+      ]
+    },
+    {
+      "id": "blood-test",
+      "name": "Comprehensive Blood Test",
+      "price": 5.00,
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg",
+      "description": "Complete blood panel to assess your overall health status and nutritional needs.",
+      "features": [
+        "Full blood count",
+        "Vitamin levels",
+        "Mineral analysis"
+      ]
+    }
+  ]
+}
